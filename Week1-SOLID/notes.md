@@ -1,20 +1,26 @@
 # SOLID Principles
 
-Learning in progress...
-
-## Notes
-
-### SRP
+## SRP
 Single Responsibility Principle
 
-### OCP
+A class should have only one reason to change.
+
+## OCP
 Open Closed Principle
 
-### LSP
+Open for extension, closed for modification.
+
+## LSP
 Liskov Substitution Principle
 
-### ISP
+Child classes should be replaceable by parent classes.
+
+## ISP
 Interface Segregation Principle
 
-### DIP
+Do not force classes to implement unnecessary methods.
+
+## DIP
 Dependency Inversion Principle
+
+Depend on abstractions, not concrete implementations.
