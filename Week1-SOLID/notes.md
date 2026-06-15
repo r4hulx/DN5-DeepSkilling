@@ -24,3 +24,13 @@ Do not force classes to implement unnecessary methods.
 Dependency Inversion Principle
 
 Depend on abstractions, not concrete implementations.
+
+SRP = One Class, One Job
+
+OCP = Add, Don't Edit
+
+LSP = Child Should Behave Like Parent
+
+ISP = Don't Force Unwanted Methods
+
+DIP = Depend on General Things, Not Specific Things
