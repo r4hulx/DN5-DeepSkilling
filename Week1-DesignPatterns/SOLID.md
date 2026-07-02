@@ -55,3 +55,13 @@ Use interfaces instead of directly creating objects.
 | LSP | Child should replace Parent |
 | ISP | Small Interfaces |
 | DIP | Depend on Interfaces |
+
+## Demo Projects
+
+| Principle | Folder |
+|-----------|--------|
+| SRP | SRP-Demo |
+| OCP | OCP-Demo |
+| LSP | LSP-Demo |
+| ISP | ISP-Demo |
+| DIP | DIP-Demo |
