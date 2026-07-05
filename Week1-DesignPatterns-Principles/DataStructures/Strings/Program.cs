@@ -1,0 +1,9 @@
+﻿//StringLength.Run();
+//ReverseString.Run();
+//Palindrome.Run();
+//CountVowels.Run();
+//CountWords.Run();
+//ReplaceWord.Run();
+//CompareStrings.Run();
+//Substring.Run();
+UpperLowerCase.Run();
