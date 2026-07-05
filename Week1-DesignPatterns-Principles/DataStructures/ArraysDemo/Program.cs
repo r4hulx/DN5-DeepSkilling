@@ -5,3 +5,7 @@
 //SearchElement.Run();
 //ReverseArray.Run();
 //CopyArray.Run();
+//SortAscending.Run();
+//SortDescending.Run();
+//SecondLargest.Run();
+RemoveDuplicates.Run();
