@@ -24,9 +24,6 @@ This repository contains my solutions, hands-on exercises, and learning artifact
 
 - **Week 7** - DevOps, Docker & GenAI Fundamentals
 
----
-
----
 
 ## Tech Stack
 
