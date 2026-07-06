@@ -1,0 +1,18 @@
+USE CognizantDB;
+GO
+
+BEGIN TRANSACTION;
+
+UPDATE Employees
+SET DepartmentID = 3
+WHERE EmployeeID = 101;
+
+SELECT *
+FROM Employees;
+
+ROLLBACK TRANSACTION;
+GO
+
+SELECT *
+FROM Employees;
+GO
