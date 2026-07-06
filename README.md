@@ -26,18 +26,6 @@ This repository contains my solutions, hands-on exercises, and learning artifact
 
 ---
 
-## Current Progress
-
-| Week | Status |
-|------|--------|
-| Week 1 | 🟨 In Progress |
-| Week 2 | ⬜ Not Started |
-| Week 3 | ⬜ Not Started |
-| Week 4 | ⬜ Not Started |
-| Week 5 | ⬜ Not Started |
-| Week 6 | ⬜ Not Started |
-| Week 7 | ⬜ Not Started |
-
 ---
 
 ## Tech Stack
