@@ -31,10 +31,10 @@ namespace StudentApi.Controllers
 
             if (student == null)
             {
-                return NotFound();
+                return NotFound("Student not found.");
             }
 
-            return student;
+            return Ok(student);
         }
 
         // POST: api/Students
@@ -53,7 +53,7 @@ namespace StudentApi.Controllers
         {
             if (id != student.Id)
             {
-                return BadRequest();
+                return BadRequest("Student ID mismatch.");
             }
 
             _context.Entry(student).State = EntityState.Modified;
@@ -66,7 +66,7 @@ namespace StudentApi.Controllers
             {
                 if (!_context.Students.Any(e => e.Id == id))
                 {
-                    return NotFound();
+                    return NotFound("Student not found.");
                 }
 
                 throw;
@@ -83,7 +83,7 @@ namespace StudentApi.Controllers
 
             if (student == null)
             {
-                return NotFound();
+                return NotFound("Student not found.");
             }
 
             _context.Students.Remove(student);
