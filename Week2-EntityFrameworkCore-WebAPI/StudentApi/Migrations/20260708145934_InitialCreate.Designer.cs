@@ -11,7 +11,7 @@ using StudentApi.Data;
 namespace StudentApi.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20260708083827_InitialCreate")]
+    [Migration("20260708145934_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -35,17 +35,10 @@ namespace StudentApi.Migrations
                     b.Property<int>("Age")
                         .HasColumnType("int");
 
-                    b.Property<string>("Department")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("Id");
 

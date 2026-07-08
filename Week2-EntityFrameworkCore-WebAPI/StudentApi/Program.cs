@@ -1,15 +1,20 @@
 using Microsoft.EntityFrameworkCore;
 using StudentApi.Data;
+using StudentApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
 
+// Register DbContext
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Swagger
+// Register Student Service
+builder.Services.AddScoped<IStudentService, StudentService>();
+
+// Swagger/OpenAPI
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
