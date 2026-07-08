@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using StudentApi.DTOs;
 using StudentApi.Services;
 
 namespace StudentApi.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class StudentsController : ControllerBase
@@ -23,7 +25,7 @@ namespace StudentApi.Controllers
             return Ok(students);
         }
 
-        // GET: api/Students/1
+        // GET: api/Students/{id}
         [HttpGet("{id}")]
         public async Task<ActionResult<StudentDto>> GetStudent(int id)
         {
