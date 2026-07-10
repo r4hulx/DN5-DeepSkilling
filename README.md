@@ -5,12 +5,6 @@ This repository contains my solutions, hands-on exercises, and learning artifact
 ## Structure
 
 - **Week 1** - Design Patterns & Principles
-  - SOLID Principles
-  - Design Patterns
-  - Data Structures
-  - Algorithms
-  - Advanced SQL
-  - NUnit & Moq
 
 - **Week 2** - Spring Core, Maven & Hibernate
 
