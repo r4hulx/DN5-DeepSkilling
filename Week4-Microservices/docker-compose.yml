@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Rahul@12345"
+    ports:
+      - "1433:1433"
+
+  productservice:
+    build:
+      context: ./ProductService
+    ports:
+      - "5129:8080"
+    depends_on:
+      - sqlserver
+
+  orderservice:
+    build:
+      context: ./OrderService
+    ports:
+      - "5093:8080"
+    depends_on:
+      - sqlserver
+      - productservice
+
+  apigateway:
+    build:
+      context: ./ApiGateway
+    ports:
+      - "5096:8080"
+    depends_on:
+      - productservice
+      - orderservice

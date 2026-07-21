@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "tRXPyp2bV8A=",
+  "success": true,
+  "projectFilePath": "/Users/rahuldas/DN5-DeepSkilling/Week4-Microservices/ApiGateway/ApiGateway.csproj",
+  "expectedPackageFiles": [
+    "/Users/rahuldas/.nuget/packages/system.io.hashing/8.0.0/system.io.hashing.8.0.0.nupkg.sha512",
+    "/Users/rahuldas/.nuget/packages/yarp.reverseproxy/2.3.0/yarp.reverseproxy.2.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
