@@ -1,0 +1,13 @@
+{
+  "courses": [
+    { "id": 1, "name": "Data Structures", "code": "CS101", "credits": 4, "gradeStatus": "passed" },
+    { "id": 2, "name": "Advanced SQL", "code": "CS102", "credits": 3, "gradeStatus": "pending" },
+    { "id": 3, "name": "ASP.NET Core Web API", "code": "CS201", "credits": 4, "gradeStatus": "pending" },
+    { "id": 4, "name": "Angular Fundamentals", "code": "CS202", "credits": 3, "gradeStatus": "failed" },
+    { "id": 5, "name": "DevOps & CI/CD", "code": "CS301", "credits": 2, "gradeStatus": "pending" }
+  ],
+  "students": [
+    { "id": 1, "name": "Jordan Lee", "email": "jordan.lee@example.com", "gpa": 3.8 }
+  ],
+  "enrollments": []
+}

@@ -1,0 +1,6 @@
+.reactive-form { padding: 1.5rem; max-width: 420px; }
+.reactive-form label { display: block; margin-bottom: 0.75rem; }
+.reactive-form input, .reactive-form select { display: block; width: 100%; padding: 0.4rem; }
+.error { color: #b91c1c; font-size: 0.85rem; }
+.success { color: green; }
+.additional-row { display: flex; gap: 0.5rem; margin-bottom: 0.5rem; }

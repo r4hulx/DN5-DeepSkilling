@@ -1,0 +1,8 @@
+.enrollment-form { padding: 1.5rem; max-width: 420px; }
+.enrollment-form label { display: block; margin-bottom: 0.75rem; }
+.enrollment-form input, .enrollment-form select { display: block; width: 100%; padding: 0.4rem; }
+.ng-invalid.ng-touched { border-color: red; }
+.ng-valid.ng-touched { border-color: green; }
+.error { color: #b91c1c; font-size: 0.85rem; }
+.success { color: green; }
+.actions { display: flex; gap: 0.5rem; }

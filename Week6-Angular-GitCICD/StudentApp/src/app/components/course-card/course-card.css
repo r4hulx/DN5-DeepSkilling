@@ -1,0 +1,15 @@
+.card {
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid grey;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  transition: background-color 0.2s ease;
+}
+.card--enrolled { background: #ecfdf5; }
+.card--full { font-weight: 600; }
+.card.expanded { padding-bottom: 1.5rem; }
+.badge--passed { color: green; }
+.badge--failed { color: red; }
+.badge--pending { color: grey; }
+.actions { display: flex; gap: 0.5rem; margin-top: 0.5rem; }

@@ -1,0 +1,11 @@
+<section class="course-detail" *ngIf="course; else loadingOrError">
+  <h2>{{ course.name }}</h2>
+  <p>Code: {{ course.code }}</p>
+  <p>Credits: {{ course.credits }}</p>
+  <p>Status: {{ course.gradeStatus }}</p>
+  <a routerLink="/courses">← Back to courses</a>
+</section>
+<ng-template #loadingOrError>
+  <p *ngIf="!errorMessage">Loading course...</p>
+  <p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
+</ng-template>

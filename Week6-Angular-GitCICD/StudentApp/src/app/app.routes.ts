@@ -1,0 +1,41 @@
+import { Routes } from '@angular/router';
+import { Home } from './pages/home/home';
+import { StudentProfile } from './pages/student-profile/student-profile';
+import { NotFound } from './pages/not-found/not-found';
+import { CoursesLayout } from './layout/courses-layout/courses-layout';
+import { CourseList } from './pages/course-list/course-list';
+import { CourseDetail } from './pages/course-detail/course-detail';
+import { authGuard } from './guards/auth-guard';
+import { unsavedChangesGuard } from './guards/unsaved-changes-guard';
+
+// Hands-On 7: route params, nested routes, guards, and lazy loading.
+// (Angular 20+ is standalone-first, so lazy loading here uses loadComponent/loadChildren
+// with a routes-array instead of an NgModule — the same on-demand-chunk behaviour.)
+export const routes: Routes = [
+  { path: '', component: Home },
+  {
+    path: 'courses',
+    component: CoursesLayout,
+    children: [
+      { path: '', component: CourseList },
+      { path: ':id', component: CourseDetail }
+    ]
+  },
+  { path: 'profile', component: StudentProfile, canActivate: [authGuard] },
+  {
+    path: 'enroll',
+    canActivate: [authGuard],
+    loadComponent: () =>
+      import('./pages/enrollment-form/enrollment-form').then(m => m.EnrollmentForm)
+  },
+  {
+    path: 'enroll-reactive',
+    canActivate: [authGuard],
+    canDeactivate: [unsavedChangesGuard],
+    loadComponent: () =>
+      import('./pages/reactive-enrollment-form/reactive-enrollment-form').then(
+        m => m.ReactiveEnrollmentForm
+      )
+  },
+  { path: '**', component: NotFound }
+];
