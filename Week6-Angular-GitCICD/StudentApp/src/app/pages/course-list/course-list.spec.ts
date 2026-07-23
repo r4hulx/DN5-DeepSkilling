@@ -32,6 +32,13 @@ describe('CourseList', () => {
     fixture = TestBed.createComponent(CourseList);
   });
 
+  afterEach(() => {
+    // MockStore.overrideSelector patches memoized selectors at the module level.
+    // Without resetting, an override from one test can leak into another when
+    // Jasmine's default random test order runs them in a different sequence.
+    store.resetSelectors();
+  });
+
   it('should render course cards from the store', () => {
     fixture.detectChanges();
     const cards = fixture.debugElement.queryAll(By.css('app-course-card'));
