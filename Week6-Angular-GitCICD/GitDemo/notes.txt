@@ -1,0 +1,6 @@
+Git-HOL Lab 2 notes:
+- git add stages changes
+- git commit -m "message" records a snapshot of staged changes
+- git status shows the working tree state
+- git log shows commit history
+- .gitignore keeps build/ and .env out of version control

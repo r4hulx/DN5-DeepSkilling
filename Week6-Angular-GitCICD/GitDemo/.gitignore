@@ -1,0 +1,5 @@
+# Git-HOL Lab 2: ignoring build artifacts and secrets
+*.log
+*.tmp
+build/
+.env
