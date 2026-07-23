@@ -1,0 +1,5 @@
+Welcome to the Git Hands-On Lab — Digital Nurture 5.0
+Week 6: Version Control with Git
+
+This file is created as part of Git-HOL Lab 1 (Introduction to Version Control,
+Setting Up Git, git init/add/commit).
